@@ -27,6 +27,18 @@
           }
         ];
       };
+
+      muca-pc = nixpkgs.lib.nixosSystem {
+        modules = [
+          ./hosts/muca-pc/configuration.nix
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.alex = import ./home/alex.nix;
+          }
+        ];
+      };
     };
   };
 }
