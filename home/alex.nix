@@ -5,7 +5,7 @@
         ../modules/alacritty.nix
         ../modules/nvim.nix
         ../modules/wofi.nix
-        ../modules/niri.nix
+        ../modules/niri_pc.nix
     ];
 
     home.username = "alex";

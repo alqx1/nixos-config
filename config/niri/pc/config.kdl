@@ -38,7 +38,7 @@ output "HDMI-A-2" {
 }
 
 output "DP-3" {
-    mode "1920x1080@319.997986"
+    mode "1920x1080"
     position x=0 y=0
     focus-at-startup
 
