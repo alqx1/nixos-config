@@ -1,0 +1,89 @@
+screenshot-path "~/other/screenshots/%Y-%m-%d_%H-%M-%S.png"
+
+prefer-no-csd
+
+input {
+    mod-key "Alt"
+    mouse {
+        accel-speed -0.5
+    }
+
+    tablet {
+        map-to-output "DP-3"
+    }
+
+    keyboard {
+        xkb {
+            options "ctrl:nocaps"
+        }
+    }
+
+    touchpad {
+        accel-speed -0.2
+        // accel-profile "flat"
+    }
+
+    focus-follows-mouse
+}
+
+cursor {
+    xcursor-size 30
+
+    hide-when-typing
+    hide-after-inactive-ms 1000
+}
+
+binds {
+    Mod+P repeat=false { spawn-sh "wofi --show drun -i"; }
+    Mod+Shift+Return repeat=false { spawn "alacritty"; }
+
+    Mod+L { focus-column-right; }
+    Mod+H { focus-column-left; }
+    Mod+K { focus-workspace-up; }
+    Mod+J { focus-workspace-down; }
+
+    Mod+Shift+L { move-column-right; }
+    Mod+Shift+H { move-column-left; }
+    Mod+Shift+K { move-column-to-workspace-up; }
+    Mod+Shift+J { move-column-to-workspace-down; }
+
+    Mod+Comma           { focus-monitor-left; }
+    Mod+Period          { focus-monitor-right; }
+    Mod+Shift+Comma     { move-column-to-monitor-left; }
+    Mod+Shift+Period    { move-column-to-monitor-right; }
+
+    Mod+D       { toggle-window-floating; }
+    Mod+Shift+F { fullscreen-window; }
+    Mod+F       { maximize-column; }
+    Mod+Shift+D { maximize-window-to-edges; }
+
+    Mod+Control+S { screenshot; }
+
+    XF86AudioRaiseVolume    { spawn-sh "~/scripts/change_volume.sh up"; }
+    XF86AudioLowerVolume    { spawn-sh "~/scripts/change_volume.sh down"; }
+    XF86AudioMute           { spawn-sh "~/scripts/change_volume.sh volume_toggle"; }
+    XF86AudioMicMute        { spawn-sh "~/scripts/change_volume.sh mic_toggle"; }
+    XF86MonBrightnessUp     { spawn-sh "~/scripts/brightness.sh up"; }
+    XF86MonBrightnessDown   { spawn-sh "~/scripts/brightness.sh down"; }
+
+    Mod+O { toggle-overview; }
+
+    Mod+Control+Shift+L { spawn-sh "~/scripts/lock.sh"; }
+
+    Mod+Shift+C { close-window; }
+    Mod+Shift+Q { quit; }
+}
+
+layout {
+    gaps 12
+
+    focus-ring {
+        on
+        width 2
+    }
+}
+
+window-rule {
+    geometry-corner-radius 6
+    clip-to-geometry true
+}
