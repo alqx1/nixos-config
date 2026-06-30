@@ -33,10 +33,15 @@
     programs.firefox.enable = true;
 
     home.packages = with pkgs; [
-      wineWow64Packages.staging
-      lazygit
       pavucontrol
+
+      lazygit
       tmux
+      devenv
+
+      prismlauncher
+      waywall
+      wineWow64Packages.staging
     ];
 
     home.stateVersion = "26.05";
