@@ -35,6 +35,8 @@
     home.packages = with pkgs; [
       wineWow64Packages.staging
       lazygit
+      pavucontrol
+      tmux
     ];
 
     home.stateVersion = "26.05";
