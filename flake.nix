@@ -37,6 +37,14 @@
             home-manager.useUserPackages = true;
             home-manager.users.alex = import ./home/muca-pc/alex.nix;
           }
+
+          ({ pkgs, ... }: {
+             nixpkgs.overlays = [
+               (final: prev: {
+                  ninb = final.callPackage ./pkgs/ninb.nix { };
+                })
+             ];
+          })
         ];
       };
     };

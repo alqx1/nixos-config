@@ -50,6 +50,11 @@
     unzip
     brightnessctl
     vim
+
+    # prismlauncher
+    jdk21
+    waywall
+    ninb
   ];
 
   fonts.packages = with pkgs; [

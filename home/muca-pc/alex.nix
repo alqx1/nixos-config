@@ -40,9 +40,14 @@
       devenv
 
       prismlauncher
-      waywall
       wineWow64Packages.staging
     ];
+
+    home.pointerCursor = {
+      name = "Bibata-Modern-Ice";
+      package = pkgs.bibata-cursors;
+      size = 12;
+    };
 
     home.stateVersion = "26.05";
 }
