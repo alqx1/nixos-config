@@ -59,7 +59,6 @@
   ];
 
   programs.niri.enable = true;
-  programs.firefox.enable = true;
   programs.zsh.enable = true;
 
   programs.steam = {
@@ -81,6 +80,8 @@
     enable = true;
     enable32Bit = true;
   };
+  services.xserver.videoDrivers = [ "nvidia" ];
+  hardware.nvidia.open = false;
 
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [

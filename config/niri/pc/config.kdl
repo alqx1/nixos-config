@@ -22,10 +22,7 @@ input {
 }
 
 cursor {
-    xcursor-size 30
-
-    hide-when-typing
-    hide-after-inactive-ms 1000
+    xcursor-size 12
 }
 
 output "HDMI-A-2" {

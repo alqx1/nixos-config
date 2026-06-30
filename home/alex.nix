@@ -30,6 +30,8 @@
       };
     };
 
+    programs.firefox.enable = true;
+
     home.packages = with pkgs; [
       wineWow64Packages.staging
       lazygit
