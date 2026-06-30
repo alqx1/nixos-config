@@ -82,6 +82,7 @@
   };
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.nvidia.open = false;
+  hardware.nvidia.modesetting.enable = true;
 
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [
