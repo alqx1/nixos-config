@@ -34,12 +34,12 @@
 
     home.packages = with pkgs; [
       pavucontrol
-
       lazygit
       tmux
       devenv
-
       prismlauncher
+      waywall
+      ninb
       wineWow64Packages.staging
     ];
 
