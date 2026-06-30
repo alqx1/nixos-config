@@ -23,7 +23,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.alex = import ./home/alex.nix;
+            home-manager.users.alex = import ./home/muca-nix/alex.nix;
           }
         ];
       };
@@ -35,7 +35,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.alex = import ./home/alex.nix;
+            home-manager.users.alex = import ./home/muca-pc/alex.nix;
           }
         ];
       };
