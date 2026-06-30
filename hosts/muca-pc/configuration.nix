@@ -49,6 +49,7 @@
     xdg-desktop-portal-gtk
     unzip
     brightnessctl
+    vim
   ];
 
   fonts.packages = with pkgs; [
