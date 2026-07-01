@@ -40,6 +40,7 @@
       lazygit
       tmux
       devenv
+      osu-lazer-bin
       wineWow64Packages.staging
     ];
 
