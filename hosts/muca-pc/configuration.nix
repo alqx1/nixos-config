@@ -10,6 +10,14 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
+
+boot.loader.limine.maxGenerations = 5;
+
   networking.hostName = "muca-nix";
   networking.networkmanager.enable = true;
 
