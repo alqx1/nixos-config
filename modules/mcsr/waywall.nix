@@ -5,5 +5,5 @@
     waywall
   ];
 
-  xdg.configFile."waywall".source = ../config/wofi;
+  xdg.configFile."waywall".source = ../../config/waywall;
 }
