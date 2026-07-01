@@ -4,6 +4,7 @@
   imports =
     [
     ./hardware-configuration.nix
+    ../../modules/opentabletdriver.nix
     ];
 
   boot.loader.systemd-boot.enable = false;
