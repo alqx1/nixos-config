@@ -14,6 +14,11 @@
     efiSupport = true;
     device = "nodev";
     theme = ../../config/grub/MilkGrub;
+    useOSProber = true;
+
+    gfxmodeEfi = "1920x1080,auto";
+    gfxpayloadEfi = "keep";
+    fontSize = 32;
   };
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
