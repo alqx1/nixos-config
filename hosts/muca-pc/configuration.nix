@@ -5,7 +5,7 @@
     [
     ./hardware-configuration.nix
     ../../modules/opentabletdriver.nix
-    ../../modules/boot/lanzaboote.nix
+    ../../modules/boot/limine.nix
     ];
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
