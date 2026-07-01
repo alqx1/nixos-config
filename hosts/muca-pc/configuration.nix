@@ -85,6 +85,14 @@
   hardware.nvidia.open = false;
   hardware.nvidia.modesetting.enable = true;
 
+  environment.etc."libinput/local-overrides.quirks" = {
+    text = ''
+      [Disable Mouse Debouncing Quirks]
+      MatchName=*
+      ModelBouncingKeys=1
+    '';
+  };
+
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [
     "nix-command"
