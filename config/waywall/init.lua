@@ -119,7 +119,7 @@ local config = {
         repeat_delay = 200,
 
         sensitivity = 5.0,
-        confine_pointer = true,
+        confine_pointer = false,
 
         remaps = {
             ["T"] = "0",
