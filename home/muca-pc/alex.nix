@@ -6,6 +6,7 @@
         ../../modules/nvim.nix
         ../../modules/wofi.nix
         ../../modules/niri_pc.nix
+        ../../modules/mcsr/mcsr.nix
     ];
 
     home.username = "alex";
@@ -37,9 +38,6 @@
       lazygit
       tmux
       devenv
-      prismlauncher
-      waywall
-      ninb
       wineWow64Packages.staging
     ];
 
