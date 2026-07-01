@@ -7,6 +7,7 @@
         ../../modules/wofi.nix
         ../../modules/niri_pc.nix
         ../../modules/mcsr/mcsr.nix
+        ../../modules/tmux.nix
     ];
 
     home.username = "alex";
