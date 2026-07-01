@@ -13,14 +13,9 @@
       url = "github:mangowm/mango";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    lanzaboote = {
-      url = "github:nix-community/lanzaboote/v0.4.3";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { nixpkgs, home-manager, mangowm, lanzaboote, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, mangowm, ... }@inputs: {
     nixosConfigurations = {
       muca-nix = nixpkgs.lib.nixosSystem {
         modules = [
@@ -44,8 +39,6 @@
             home-manager.useUserPackages = true;
             home-manager.users.alex = import ./home/muca-pc/alex.nix;
           }
-
-          lanzaboote.nixosModules.lanzaboote
 
           ({ pkgs, ... }: {
              nixpkgs.overlays = [
