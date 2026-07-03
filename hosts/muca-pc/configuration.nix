@@ -16,7 +16,7 @@
     options = "--delete-older-than 7d";
   };
 
-boot.loader.limine.maxGenerations = 5;
+  boot.loader.limine.maxGenerations = 5;
 
   networking.hostName = "muca-nix";
   networking.networkmanager.enable = true;

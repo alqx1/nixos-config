@@ -70,12 +70,8 @@ binds {
 
     Mod+Control+S { screenshot; }
 
-    XF86AudioRaiseVolume    { spawn-sh "~/scripts/change_volume.sh up"; }
-    XF86AudioLowerVolume    { spawn-sh "~/scripts/change_volume.sh down"; }
-    XF86AudioMute           { spawn-sh "~/scripts/change_volume.sh volume_toggle"; }
-    XF86AudioMicMute        { spawn-sh "~/scripts/change_volume.sh mic_toggle"; }
-    XF86MonBrightnessUp     { spawn-sh "~/scripts/brightness.sh up"; }
-    XF86MonBrightnessDown   { spawn-sh "~/scripts/brightness.sh down"; }
+    Alt+Shift+I    { spawn-sh "~/scripts/change_volume.sh up"; }
+    Alt+Shift+O   { spawn-sh "~/scripts/change_volume.sh down"; }
 
     Mod+O { toggle-overview; }
 
