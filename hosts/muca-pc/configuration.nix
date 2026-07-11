@@ -49,6 +49,7 @@
     xwayland-satellite
     xdg-desktop-portal-gtk
     unzip
+    unrar
     brightnessctl
     vim
   ];

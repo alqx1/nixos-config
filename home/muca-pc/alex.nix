@@ -42,6 +42,10 @@
       devenv
       osu-lazer-bin
       wineWow64Packages.staging
+      qbittorrent
+      lutris
+      obsidian
+      obs-studio
     ];
 
     home.pointerCursor = {
