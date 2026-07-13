@@ -9,6 +9,7 @@
         ../../modules/mcsr/mcsr.nix
         ../../modules/tmux.nix
         ../../modules/zsh.nix
+        ../../modules/awww.nix
     ];
 
     home.username = "alex";

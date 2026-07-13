@@ -1,4 +1,5 @@
 screenshot-path "~/other/screenshots/%Y-%m-%d_%H-%M-%S.png"
+spawn-sh-at-startup "sleep 1; ~/scripts/wallpaper.sh"
 
 prefer-no-csd
 
@@ -22,7 +23,7 @@ input {
 }
 
 cursor {
-    xcursor-size 12
+    hide-after-inactive-ms 1000
 }
 
 output "HDMI-A-2" {
