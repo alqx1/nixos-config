@@ -26,16 +26,16 @@ cursor {
     hide-after-inactive-ms 1000
 }
 
-output "HDMI-A-2" {
+output "LG Electronics W2361 0x0004AA4E" {
     mode "1920x1080@60"
-    position x=1920 y=0
+    position x=-1920 y=0
 
     hot-corners {
         off
     }
 }
 
-output "DP-3" {
+output "PNP(XEC) MFG25X1 Pro 0x00000001" {
     mode "1920x1080@319.998"
     position x=0 y=0
     focus-at-startup
