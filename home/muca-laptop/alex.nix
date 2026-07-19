@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ pkgs, ...}:
 
 {
     imports = [
@@ -6,6 +6,9 @@
         ../../modules/nvim.nix
         ../../modules/wofi.nix
         ../../modules/niri_laptop.nix
+        ../../modules/tmux.nix
+        ../../modules/zsh.nix
+        ../../modules/awww.nix
     ];
 
     home.username = "alex";

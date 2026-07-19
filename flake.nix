@@ -8,24 +8,18 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    mangowm = {
-      url = "github:mangowm/mango";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { nixpkgs, home-manager, mangowm, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations = {
-      muca-nix = nixpkgs.lib.nixosSystem {
+      muca-laptop = nixpkgs.lib.nixosSystem {
         modules = [
-          ./hosts/muca-nix/configuration.nix
+          ./hosts/muca-laptop/configuration.nix
           home-manager.nixosModules.home-manager
-          mangowm.nixosModules.mango
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.alex = import ./home/muca-nix/alex.nix;
+            home-manager.users.alex = import ./home/muca-laptop/alex.nix;
           }
         ];
       };
