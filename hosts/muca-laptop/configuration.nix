@@ -5,6 +5,7 @@
     [
     ./hardware-configuration.nix
     ../../modules/graphics/intel.nix
+    ../../modules/bluetooth.nix
     ];
 
   boot.loader.systemd-boot.enable = false;
