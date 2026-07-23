@@ -9,18 +9,11 @@
         ../../modules/tmux.nix
         ../../modules/zsh.nix
         ../../modules/awww.nix
+        ../../modules/git.nix
     ];
 
     home.username = "alex";
     home.homeDirectory = "/home/alex";
-
-    programs.git = {
-        enable = true;
-        settings = {
-          user.name = "alqx1";
-          user.email = "alex.kovac3@gmail.com";
-        };
-    };
 
     programs.ssh = {
       matchBlocks = {
@@ -31,6 +24,12 @@
           identitiesOnly = true;
         };
       };
+    };
+
+    home.pointerCursor = {
+      name = "Bibata-Modern-Ice";
+      package = pkgs.bibata-cursors;
+      size = 12;
     };
 
     programs.firefox.enable = true;
